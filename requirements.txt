@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-groq
+langchain-core
+sentence-transformers
+faiss-cpu
+PyPDF2
+requests
+pdfminer.six
+python-dotenv
+transformers
+torch
+langchain-community
