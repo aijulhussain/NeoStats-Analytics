@@ -9,7 +9,7 @@ from config.config import MAX_CHUNK_SIZE, CHUNK_OVERLAP
 from langchain_community.document_loaders import PyPDFLoader
 
 
-try:  # type: ignore
+try:  
     _HAS_LANGCHAIN = True
 except Exception:
     _HAS_LANGCHAIN = False

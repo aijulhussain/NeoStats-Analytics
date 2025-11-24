@@ -29,7 +29,7 @@ def create_index_from_docs(docs: List[Tuple[str, str]]):
 
 def retrieve(query: str, fs: FaissStore, top_k: int = TOP_K):
     """
-    Returns retrieval results from FaissStore as list of metadata dicts with score
+    Returns retrieval results from Faiss Vector Store as list of metadata dicts with score
     """
     qvec = emb.embed([query])[0]
     hits = fs.search(qvec, top_k=top_k)
